@@ -9,8 +9,14 @@ p {
     font-size: .8em;
 }
 
-h3 {
+h3,
+h4 {
     font-weight: 400;
+}
+
+h4 {
+    text-align: left;
+    margin-bottom: 30px;
 }
 
 /* 
@@ -40,12 +46,12 @@ main {
     grid-area: main;
     color: grey;
     text-align: center;
+    border: 1px rgba(123, 122, 156, 0.322) solid;
 }
 
 .container {
     margin: auto;
     height: 100vh;
-    border: 1px rgba(123, 122, 156, 0.651) solid;
     max-width: 1300px;
     display: grid;
     grid-template-columns: 1fr;
@@ -141,7 +147,7 @@ main {
 */
 
 #search-tab {
-    background-color: rgba(231, 231, 231, 0.459);
+    background-color: rgba(251, 251, 251);
     padding: 20px;
     text-align: center;
     border-left: 1px rgba(123, 122, 156, 0.322) solid;
@@ -165,7 +171,7 @@ input {
     left: -30px;
 }
 
-#chart-area{
+#widget-area{
     padding: 20px;
 }
 
@@ -190,16 +196,74 @@ input {
 
 /* 
    ----------------------------
-   Charts
+   WIDGETS
    ----------------------------
 */
 
-canvas {
-    /* color: grey; */
+.widget {
+    padding: 30px 0;
+    border-bottom: 1px rgba(123, 122, 156, 0.322) solid;    
 }
 
 /* 
    ----------------------------
+   SOCIAL WIDGETS
+   ----------------------------
+*/
+
+.social-users {
+    background-color: rgba(251, 251, 251);
+    padding: 20px 30px;
+    border: 1px rgba(123, 122, 156, 0.322) solid;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    text-align: center;
+    background-color: #7477BF;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+#twitter,
+#google {
+    width: 50%;
+    padding: 30px 0;
+}
+
+#google {
+    width: 45px;
+}
+
+#facebook {
+    padding: 22px 0; 
+    width: 53px;
+}
+
+.social-text {
+    text-align: left;
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.social-brand {
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #7477BF;
+}
+
+.social-numbers {
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+
+/*   ----------------------------
    Media Queries
    ----------------------------
 */
@@ -248,3 +312,13 @@ canvas {
         top: -15px;
     }
 }
+
+/*   ----------------------------
+   CLEAR FIX
+   ----------------------------
+*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
