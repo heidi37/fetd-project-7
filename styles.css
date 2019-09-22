@@ -42,11 +42,11 @@ main {
     text-align: center;
 }
 
-
 .container {
     margin: auto;
     height: 100vh;
     border: 1px rgba(123, 122, 156, 0.651) solid;
+    max-width: 1300px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 60px;
@@ -135,7 +135,7 @@ main {
     border-bottom: 1px rgba(123, 122, 156, 0.651) solid;
 }
 #dashboard-tab {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 input {
@@ -145,6 +145,34 @@ input {
     border: 1px rgba(123, 122, 156, 0.651) solid;
     font-size: 1em;
     padding-left: 10px;
+}
+
+.fa-search {
+    position: relative;
+    left: -30px;
+}
+
+#chart-area{
+    padding: 20px;
+}
+
+#alert {
+    background-color: #7477BF;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 300;
+    text-align: left;
+}
+
+#alert p {
+    width: 90%;
+}
+
+.fa-times {
+    float: right;
+    position: relative;
+    top: -25px;
 }
 
 /* 
@@ -172,22 +200,19 @@ input {
         float: right;
         display: inline-block;
         width: 80%;
-        padding: 5px;
+        padding: 5px 0;
         text-align: right; 
     }
-    input {
-        margin-right: 8px;
-    }
-
     #dashboard-tab {
         display: inline-block;
         padding: 15px;
-    
     }
 }
 
 @media (min-width: 1024px) {
     .container{
-        max-width: 1000px;
+    }
+    .fa-times {
+        top: -15px;
     }
 }
