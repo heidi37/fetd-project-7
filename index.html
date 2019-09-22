@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your App Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="https://kit.fontawesome.com/525b6bfba8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -40,7 +42,7 @@
         </header>
         <nav>
             <div id="icon-bar">
-                <div id="selected-icon-div">&nbsp;</div>
+                
                 <div class="nav-icon">
                     <svg id="selected-icon" class="dashboard" version="1.1" id="Line_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -127,9 +129,45 @@
                     <p><strong>Alert</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
                     <i class="fas fa-times"></i>
                 </div>
+
+                <div id="traffic-chart">
+                        <canvas id="traffic"></canvas>
+                </div>
+
             </div>
         </main>
-    </div>  
+    </div> 
+    <script>
+        //TRAFFIC
 
+        var ctx = document.getElementById('traffic').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', 
+        '18-24', '25-31'],
+                datasets: [{
+                    label: 'Weekly',
+                    backgroundColor: 'rgb(226, 227, 246)',
+                    borderColor: 'rgb(116, 119, 191)',
+                    borderWidth: 1,
+                    lineTension: 0,
+                    pointBorderWidth: 2,
+                    pointBackgroundColor: 'rgb(255, 255, 255)',
+                    pointRadius: 6,
+                    data: [750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+       
+        // DAILY TRAFFIC
+ 
+    </script>
 </body>
 </html>

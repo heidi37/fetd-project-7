@@ -122,8 +122,6 @@ main {
     opacity: .5;
 }
 
-
-
 #selected-icon{
   opacity: 1;
   border-bottom: 3px solid rgb(100, 221, 123);
@@ -192,6 +190,16 @@ input {
 
 /* 
    ----------------------------
+   Charts
+   ----------------------------
+*/
+
+canvas {
+    /* color: grey; */
+}
+
+/* 
+   ----------------------------
    Media Queries
    ----------------------------
 */
@@ -207,10 +215,11 @@ input {
     #icon-bar{
         flex-direction: column;
         justify-content: flex-start;
+        padding-top: 20px;
     }
     .nav-icon svg {
         padding: 20px 20px;
-        width: 75px;
+        width: 70px;
     }
     #search-tab {
         float: right;
