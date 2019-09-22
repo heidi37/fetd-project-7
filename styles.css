@@ -82,6 +82,15 @@ main {
     padding: 3px 15px 3px 0;
 }
 
+#green-bullet {
+    float:left;
+    color: #81C88E;
+    font-size: 1.6em;
+    position: relative;
+    left: 23px;
+    bottom: 8px;
+}
+
 .profile-image {
  width: 25px;
  border-radius: 50%;
@@ -113,8 +122,14 @@ main {
     opacity: .5;
 }
 
+
+
 #selected-icon{
-    opacity: 1;
+  opacity: 1;
+  border-bottom: 3px solid rgb(100, 221, 123);
+  border-radius: 1px;
+  padding-bottom: 15px;
+  padding-right: 1px;
 }
 
 .nav-icon {
@@ -128,11 +143,11 @@ main {
 */
 
 #search-tab {
-    background-color: rgba(116, 118, 191, 0.164);
+    background-color: rgba(231, 231, 231, 0.459);
     padding: 20px;
     text-align: center;
-    border-left: 1px rgba(123, 122, 156, 0.651) solid;
-    border-bottom: 1px rgba(123, 122, 156, 0.651) solid;
+    border-left: 1px rgba(123, 122, 156, 0.322) solid;
+    border-bottom: 1px rgba(123, 122, 156, 0.322) solid;
 }
 #dashboard-tab {
     padding-top: 20px;
@@ -142,7 +157,7 @@ input {
     border-radius: 5px;
     height: 40px;
     width: 300px;
-    border: 1px rgba(123, 122, 156, 0.651) solid;
+    border: 1px rgba(123, 122, 156, 0.322) solid;
     font-size: 1em;
     padding-left: 10px;
 }
@@ -194,7 +209,8 @@ input {
         justify-content: flex-start;
     }
     .nav-icon svg {
-        padding: 20px 0;
+        padding: 20px 20px;
+        width: 75px;
     }
     #search-tab {
         float: right;
@@ -207,6 +223,13 @@ input {
         display: inline-block;
         padding: 15px;
     }
+
+    #selected-icon{
+        border-left: 3px solid rgb(100, 221, 123);
+        border-bottom: none;
+        padding: 12px 30px 12px 20px;
+        width: 84px;
+      }
 }
 
 @media (min-width: 1024px) {
