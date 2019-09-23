@@ -363,7 +363,7 @@ select {
 
 textarea {
     border-radius: 5px;
-    height: 200px;
+    height: 150px;
     width: 100%;
     border: 1px rgba(123, 122, 156, 0.322) solid;
     font-size: 1em;
@@ -508,8 +508,49 @@ label.wrap:after {
         width: 84px;
       }
 
-      .social-icon {
+    .social-icon {
         margin-left: 0px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .item-1,
+    .item-2
+    {
+        width: 50%;
+    }
+
+    .item-1 {
+        padding-right: 20px;
+    }
+
+    .item-2 {
+        border-left: 1px rgba(123, 122, 156, 0.322) solid;
+        padding-left: 20px;
+    }
+
+
+    .social-stats {
+        width: 100%;     
+    }
+
+    .social-1,
+    .social-2,
+    .social-3 {
+        width: 50%;
+    }
+
+    .settings {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .setting-buttons {
+        margin-top: auto;
     }
 }
 
