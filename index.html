@@ -7,6 +7,7 @@
     <title>Your App Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="https://kit.fontawesome.com/525b6bfba8.js" crossorigin="anonymous"></script>
@@ -323,7 +324,7 @@
                 <div class="widget message-user">
                     <h4>MESSAGE USER</h4>
                     <form>
-                        <div>
+                    <div>
                         <input type="text" id="usersearch" name="user_search" placeholder="Search for User">
                     </div>
                     <div>
@@ -333,8 +334,58 @@
                     <button type="submit">SEND</button>
                     </form> 
                 </div>
-                <div class="widget settings">
+                <div class="widget settings clearfix">
                     <h4>SETTINGS</h4>
+
+                    <div class="setting-row">
+                        <div class="member-text">
+                            <p>Send Email Notifications</p>
+                        </div>
+                        
+                        <div class="pills">
+                            <label class="switch-light switch-ios" style="width: 100px" onclick="">
+                                <input type="checkbox" checked>
+                                <span>
+                                <span>Off</span>
+                                <span>On</span>
+                                <a></a>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="member-text">
+                        <p>Set Profile to Public</p>
+                        </div>
+                        <div class="pills">
+                            <label class="switch-light switch-ios" style="width: 100px" onclick="">
+                                <input type="checkbox" checked>
+                                <span>
+                                <span>Off</span>
+                                <span>On</span>
+                                <a></a>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="wrap">
+                            <select class="dropdown" id="timezone" name="user_timezone">
+                                <option value="" id="choose">Select Timezone</option> 
+                                <option value="EST">Eastern Standard Time</option>
+                                <option value="CST">Central Standard Time</option>
+                                <option value="MST">Mountain Standard Time</option>
+                                <option value="PST">Pacific Standard Time</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="setting-buttons">
+                        <button type="submit">SAVE</button>
+                        <button type="reset">CANCEL</button>
+                    </div>
+
                 </div>
 
             </div>
