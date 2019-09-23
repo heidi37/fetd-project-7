@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* ----------------------------
+   Base Styles
+   ----------------------------*/
+
 p {
     font-size: .8em;
 }
@@ -30,11 +34,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 
-   ----------------------------
+/* ----------------------------
    Defining Grid
-   ----------------------------
-*/
+   ----------------------------*/
 
 header {
     grid-area: header;
@@ -73,11 +75,9 @@ main {
         "main";
 }
 
-/* 
-   ----------------------------
+/* ----------------------------
    Header Styling
-   ----------------------------
-*/
+   ----------------------------*/
 
 .logo {
     float: left;
@@ -121,7 +121,6 @@ main {
     display: inline-block;
     height: 25px;
     position: relative;
-   
 }
 
 .profile-image {
@@ -135,11 +134,9 @@ main {
     padding-top: 7px;
 }
 
-/* 
-   ----------------------------
+/* ----------------------------
    Navigation
-   ----------------------------
-*/
+   ----------------------------*/
 
 #icon-bar{
    width: 100%;
@@ -167,11 +164,9 @@ main {
     display: inline-block;
 }
 
-/* 
-   ----------------------------
+/* ----------------------------
    Main Content Styling
-   ----------------------------
-*/
+   ----------------------------*/
 
 #search-tab {
     background-color: rgba(251, 251, 251);
@@ -180,6 +175,7 @@ main {
     border-left: 1px rgba(123, 122, 156, 0.322) solid;
     border-bottom: 1px rgba(123, 122, 156, 0.322) solid;
 }
+
 #dashboard-tab {
     padding-top: 20px;
 }
@@ -198,7 +194,7 @@ select {
 #timezone:first-child {
     font-size: .9em;
     color: #61738356;
-  }
+}
 
 .fa-search {
     position: relative;
@@ -231,20 +227,17 @@ select {
 /* 
    ----------------------------
    WIDGETS
-   ----------------------------
-*/
+   ----------------------------*/
 
 .widget {
     padding: 30px 0;
     border-bottom: 1px rgba(123, 122, 156, 0.322) solid;    
 }
 
-
 /* 
    ----------------------------
    SOCIAL WIDGETS
-   ----------------------------
-*/
+   ----------------------------*/
 
 .social-users {
     background-color: rgba(251, 251, 251);
@@ -300,8 +293,7 @@ select {
 
 /* ----------------------------
    NEW MEMBERS
-   ----------------------------
-*/
+   ----------------------------*/
 
 .member-activity {
     border-bottom: 1px rgba(123, 122, 156, 0.322) solid;
@@ -343,8 +335,7 @@ div .recent .member-activity:last-child {
 
 /* ----------------------------
    Recent Activities
-   ----------------------------
-*/
+   ----------------------------*/
 
 .time {
     font-size: .7em;
@@ -362,8 +353,7 @@ div .recent .member-activity:last-child {
 
 /* ----------------------------
    Message Users
-   ----------------------------
-*/
+   ----------------------------*/
 
 form input,
 form textarea {
@@ -396,10 +386,34 @@ button[type="submit"] {
     font-size: 1em;
 }
 
+#message-submitted,
+#message-error {
+    background-color: rgba(129, 200, 142, 0.295);
+    border: 1px solid #81C88E;
+    color: #81C88E;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+    display: none;
+}
+
+#message-submitted .fa-times,
+#message-error .fa-times {
+    top: -15px;
+}
+
+#message-error {
+    background-color: rgba(190, 41, 41, 0.295);
+    border: 1px solid rgb(190, 41, 41);
+    color: rgb(190, 41, 41);
+}
+
 /* ----------------------------
    Settings
-   ----------------------------
-*/
+   ----------------------------*/
 
 .switch-ios.switch-light input:checked ~ span {
     border-color: #7477BF;
@@ -452,8 +466,7 @@ button[type="reset"] {
 
 /* ----------------------------
    Chevron For Select - Thans to Mihai T on StackOverflow - https://stackoverflow.com/questions/38990575/replace-select-dropdown-arrow-with-fa-icon
-   ----------------------------
-*/
+   ----------------------------*/
 
 label.wrap {
     overflow: hidden; 
@@ -485,8 +498,7 @@ label.wrap:after {
 
 /* ----------------------------
    Media Queries
-   ----------------------------
-*/
+   ----------------------------*/
 
 @media (min-width: 768px) {
     .container {
@@ -522,8 +534,7 @@ label.wrap:after {
         border-bottom: none;
         padding: 12px 30px 12px 20px;
         width: 84px;
-      }
-
+    }
 
     .row {
         display: flex;
@@ -570,7 +581,6 @@ label.wrap:after {
     .setting-buttons {
         margin-top: auto;
     }
-
 }
 
 @media (min-width: 1024px) {
@@ -586,10 +596,9 @@ label.wrap:after {
 
 /*   ----------------------------
    CLEAR FIX
-   ----------------------------
-*/
+   ----------------------------*/
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}

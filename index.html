@@ -332,7 +332,18 @@
                 <div class="row">
                     <div class="widget message-user item-1">
                         <h4>MESSAGE USER</h4>
-                        <form>
+
+                        <div id="message-error">
+                                <p>Please fill out a User and a Message.</p>
+                                <i class="fas fa-times"></i>
+                        </div>
+                        
+                        <div id="message-submitted">
+                                <p>Your Message has been submitted.</p>
+                                <i class="fas fa-times"></i>
+                        </div>
+
+                        <form id="message-form">
                         <div>
                             <input type="text" id="usersearch" name="user_search" placeholder="Search for User">
                         </div>
@@ -340,7 +351,7 @@
                             <textarea id="message" name="message" placeholder="Message for User"></textarea>
                         </div>
 
-                        <button type="submit">SEND</button>
+                        <button type="submit" id="send" action="post">SEND</button>
                         </form> 
                     </div>
                     <div class="widget settings clearfix item-2">
