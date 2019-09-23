@@ -94,9 +94,15 @@ main {
 }
 
 #bell-icon {
-    width: 35px;
-    border-right: 1px solid #4D4C72;
-    padding: 3px 15px 3px 0;
+    width: 22px;
+    /* border-right: 1px solid #4D4C72;
+    padding: 3px 15px 3px 0; */
+    
+    transition-duration: .4s;
+}
+
+#bell-icon:hover {
+    transform: scale(1.3) rotate(-25deg);
 }
 
 #green-bullet {
@@ -106,6 +112,16 @@ main {
     position: relative;
     left: 23px;
     bottom: 8px;
+}
+
+.divider {
+    border-right: 1px solid #4D4C72;
+    width: 1px;
+    padding-left: 9px;
+    display: inline-block;
+    height: 25px;
+    position: relative;
+   
 }
 
 .profile-image {

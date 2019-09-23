@@ -10,7 +10,7 @@
                 labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', 
         '18-24', '25-31'],
                 datasets: [{
-                    label: 'Weekly',
+                    label: '# of Visits',
                     backgroundColor: 'rgb(226, 227, 246)',
                     borderColor: 'rgb(116, 119, 191)',
                     borderWidth: 1,
@@ -41,7 +41,7 @@
             data: {
                 labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
                 datasets: [{
-                    label: '# of Votes',
+                    label: '# Visits',
                     backgroundColor: 'rgb(116, 119, 191)',
                     borderColor: 'rgb(116, 119, 191)',
                     data: [75, 150, 175, 125, 225, 200, 100],
@@ -73,7 +73,7 @@
                     'rgb(116, 177, 190)',                    
                     'rgb(116, 119, 191)'
                     ],
-                    data: [16, 14, 70],
+                    data: [1600, 1400, 7000],
                     borderWidth: 1
                 }]
             },
