@@ -508,9 +508,6 @@ label.wrap:after {
         width: 84px;
       }
 
-    .social-icon {
-        margin-left: 0px;
-    }
 
     .row {
         display: flex;
@@ -533,15 +530,20 @@ label.wrap:after {
         padding-left: 20px;
     }
 
-
-    .social-stats {
-        width: 100%;     
+    .social-icon,
+    .social-text {
+        margin-left: 0;
     }
 
     .social-1,
     .social-2,
     .social-3 {
-        width: 50%;
+        flex-grow: 1;
+    }
+
+    .social-2 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .settings {
@@ -552,6 +554,7 @@ label.wrap:after {
     .setting-buttons {
         margin-top: auto;
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -559,6 +562,9 @@ label.wrap:after {
     }
     .fa-times {
         top: -15px;
+    }
+    .social-text {
+        margin-left: 10px;
     }
 }
 
