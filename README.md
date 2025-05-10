@@ -15,7 +15,7 @@ The objective was to implement a given layout using Chart.js, HTML and CSS.
 
 ## Optimizations
 
-- The layout is not fully responsive and does not look correct on mobile
+- The layout page needs to be refreshed in order to see the responsive layout correctly on mobile, should refresh on resize
 - Some of the color choices might not be accessible, like inactive pill sliders
 
 ## Lessons Learned
